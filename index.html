@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Trang chủ</title>
+      <link rel="icon" href="./assets/img/icon.png" />
+      <link rel="stylesheet" href="./assets/css/base.css" />
+      <link rel="stylesheet" href="./assets/css/main.css" />
+      <link rel="stylesheet" href="./assets/css/grid.css" />
+      <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.1-web/css/all.css" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese;"
+         rel="stylesheet"
+      />
+   </head>
+   <body>
+      <div class="app">
+         <header class="header">
+            <div class="grid wide">
+               <nav class="header__navbar">
+                  <ul class="header__navbar-list">
+                     <li class="header__navbar-item header__navbar-item--has-notify">
+                        <a href="" class="header__navbar-item-link">
+                           <i class="header__navbar-icon fa-regular fa-bell"></i>
+                           Thông báo
+                        </a>
+                     </li>
+                     <li class="header__navbar-item">
+                        <a href="" class="header__navbar-item-link">
+                           <i class="header__navbar-icon fa-regular fa-circle-question"></i>
+                           Trợ giúp
+                        </a>
+                     </li>
+                     <li
+                        class="header__navbar-item header__navbar-item-strong header__navbar-item-separate"
+                     >
+                        Đăng ký
+                     </li>
+                     <li class="header__navbar-item header__navbar-item-strong">Đăng nhập</li>
+                     <!-- <li class="header__navbar-item header__navbar-user">
+                            <img src="https://fullstack.edu.vn/static/media/fallback-avatar.155cdb2376c5d99ea151.jpg" alt="" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">Sỹ Luân</span>
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+                                <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li> -->
+                  </ul>
+               </nav>
+               <!-- header with search -->
+               <div class="header-with-search">
+                  <label for="mobile-search-checkbox" class="header__mobile-search">
+                     <i class="fa-solid fa-magnifying-glass header__mobile-search-icon"></i>
+                  </label>
+
+                  <div class="header__logo hide-on-tablet">
+                     <a href="/" class="header__logo-link">
+                        <img
+                           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8WM77EcSAH77nrmYRaUmosfbPAdjIrLF6_Q&usqp=CAU"
+                           alt=""
+                        /> 
+                        
+                     </a> 
+                     
+                    </div>
+                  <input
+                     type="checkbox"
+                     hiden
+                     id="mobile-search-checkbox"
+                     class="header__search-checkbox"
+                  />
+
+                  <div class="header__search">
+                     <div class="header__search-input-wrap">
+                        <input
+                           type="text"
+                           placeholder="Nhập để tìm kiếm sản phẩm"
+                           class="header__search-input"
+                        />
+                        <!-- Search history -->
+                        <div class="header__search-history">
+                           <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                           <ul class="header__search-history-list">
+                              <li class="header__search-history-item">
+                                 <a href="">Áo nam</a>
+                              </li>
+                              <li class="header__search-history-item">
+                                 <a href="">Áo nữ</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <button class="header__search-btn">
+                        <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                     </button>
+                  </div>
+
+                  <!-- cart layout -->
+                  <div class="header__cart">
+                     <div class="header__cart-wrap">
+                        <i class="header__cart-icon fas fa-shopping-cart"></i>
+                        <!-- <span class="header__cart-notice">3</span> -->
+
+                        <!-- No cart:  header__cart-list--no-cart -->
+                        <div class="header__cart-list">
+                           <img
+                              src="./assets/img/nocart.png"
+                              alt=""
+                              class="header__cart-no-cart-img"
+                           />
+                           <span class="header__cart-no-cart-msg">Chưa có sản phẩm</span>
+
+                           <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                           <!-- cart item -->
+                           <ul class="header__cart-list-item">
+                              <!-- <li class="header__cart-item">
+                                        <img src="https://img.tickid.vn/photos/resized/320x/83-1580888419-myphamohui-lgvina.png" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bộ kem đặc trị vùng mắt</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">2.000.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-desc">Phân loại: bạc</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    -->
+                           </ul>
+                           <a href="#" class="btn btn--primary header__cart-view">Xem giỏ hàng</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <ul class="header__sort-bar">
+               <li class="header__sort-item">
+                  <a href="" class="header__sort-link">Liên quan</a>
+               </li>
+               <li class="header__sort-item header__sort-item--active">
+                  <a href="" class="header__sort-link">Mới nhất</a>
+               </li>
+               <li class="header__sort-item">
+                  <a href="" class="header__sort-link">Bán chạy</a>
+               </li>
+               <li class="header__sort-item">
+                  <a href="" class="header__sort-link">Giá</a>
+               </li>
+            </ul>
+         </header>
+
+         <div class="container"></div>
+         <footer class="footer"></footer>
+      </div>
+   </body>
+</html>
